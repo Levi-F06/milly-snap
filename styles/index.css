@@ -1,0 +1,144 @@
+.noScroll {
+    height: 100%;
+    overflow: hidden;
+}
+
+.hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition:
+        visibility 0s,
+        opacity 0.5s linear;
+}
+
+* {
+    visibility: visible;
+    opacity: 1;
+    transition:
+        visibility 0s,
+        opacity 0.5s linear;
+}
+
+html,
+body,
+main {
+    height: 100%;
+}
+
+main {
+    height: 950px;
+}
+
+.getBig {
+    height: 1350px;
+}
+
+main p {
+    font-size: 32px;
+}
+
+main h1 {
+    font-size: 48px;
+}
+
+#introduction,
+div.scroll {
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.scroll {
+    gap: 0;
+}
+
+button {
+    padding: 20px;
+    background-color: #ffc8dd;
+    border: 2px solid #ffafcc;
+    border-radius: 30px;
+    box-shadow: 0 0 40px 2px white;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: none;
+    background-color: #ffafcc;
+    color: white;
+    transition: all 0.4s;
+}
+
+button:active {
+    background-color: #ffc8dd;
+    transition: all 0.4s;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+}
+
+.noDisplay {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+#gameContainer {
+    padding: 1%;
+    width: 100%;
+    font-family: "Press Start 2P";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 600px;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    object-fit: fill;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+#lastPlayedContainer p {
+    font-size: 16px !important ;
+}
+
+#lastPlayedContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.smallCard {
+    width: 75px;
+    height: 100px;
+}
+
+.mainCard {
+    width: 300px;
+    height: 325px;
+}
+
+#gameContainer p {
+    font-size: 24px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    width: 350px;
+    text-align: center;
+}

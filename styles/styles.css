@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #4e4d5c;
+}
+
+/* COLORS */
+/*
+    #a2d2ff - darkish blue, use for header
+    #bde0fe - light blue, use for selected link in nav
+    #cdb4db - lilac color, use for footer
+    #ffc8dd - baby pink, use for body
+    #ffafcc - solid pink, idk what to use this for yet, probably borders for things
+    #4E4D5C - nice grey to use for text
+*/
+
+/* Header stuff */
+
+header {
+    width: 100%;
+    height: 150px;
+    padding: 0 3% 0 3%;
+    background-color: #a2d2ff;
+    display: flex;
+    justify-content: space-between;
+}
+
+header img {
+    width: 20%;
+}
+
+header h1 {
+    font-size: 48px;
+}
+
+#navFirst {
+    padding: 2% 2% 0 2%;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+}
+
+nav {
+    display: flex;
+    justify-content: stretch;
+    height: 100%;
+    width: 100%;
+}
+
+.navLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 32px;
+    background-color: #bde0fe;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.navLink:hover {
+    background-color: #a2d2ff;
+    transition: all 0.3s;
+}
+
+.navLink:active {
+    background-color: #bde0fe;
+    transition: all 0.3s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #4e4d5c;
+}
+
+.selected {
+    text-decoration: underline;
+}
+
+/* Main */
+
+main {
+    background-color: #ffc8dd;
+    padding: 2%;
+}
+
+/* Footer */
+
+footer {
+    background-color: #cdb4db;
+}
+
+#footer {
+    padding: 2% 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#tulipBanner {
+    width: 100%;
+    height: 200px;
+}
+
+#me {
+    width: 100px;
+}
+
+figure,
+#links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 50%;
+}
+
+figcaption {
+    text-align: center;
+    width: 50%;
+}
+
+footer a {
+    transition: all 0.2s;
+}
+
+footer a:hover {
+    color: #ffc8dd;
+    transition: all 0.2s;
+}
+
+footer a:active {
+    color: #ffafcc;
+    transition: all 0.2s;
+}

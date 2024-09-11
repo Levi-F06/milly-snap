@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hey Gorgous!</title>
+        <link rel="stylesheet" href="./styles/styles.css" />
+        <link rel="stylesheet" href="./styles/index.css" />
+        <!-- FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Press+Start+2P&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body class="noScroll">
+        <header>
+            <div id="navFirst">
+                <h1>Levi and Milly's cool website</h1>
+                <nav>
+                    <a class="navLink selected" href="./index.html">
+                        <p>Home</p>
+                    </a>
+                    <a class="navLink" href="./pages/rules.html">
+                        <p>Rules</p>
+                    </a>
+                </nav>
+            </div>
+            <img src="./images/star-logo.png" />
+        </header>
+        <main>
+            <section id="introduction">
+                <h1>Welcome Milly!</h1>
+                <div class="scroll">
+                    <p>Scroll down</p>
+                    <p id="arrow">↓</p>
+                </div>
+                <p class="hidden scroll">Welcome to my super cool website!</p>
+                <p class="hidden scroll">
+                    I hope you have read the <strong>rules</strong>.
+                </p>
+                <button id="startBtn" class="hidden scroll">
+                    Click here to begin the game
+                </button>
+            </section>
+            <section class="main noDisplay">
+                <button id="showControls">Show Controls</button>
+                <div class="noDisplay" id="gameControls">
+                    <h1>Levi</h1>
+                    <p>You already know your controls dumbass</p>
+                    <br />
+                    <h1>Milly!</h1>
+                    <p>Press 'M' to place a card on the pile</p>
+                    <p>if the current card and the last played are the same</p>
+                    <p>you can use 'N' to call snap</p>
+                    <p>however if you are wrong I get the point 😉</p>
+                </div>
+                <div id="gameContainer">
+                    <div class="player">
+                        <img
+                            id="levisHand"
+                            src="./images/mystery.png"
+                            class="card"
+                        />
+                        <h2 id="leviTitle">Levi</h2>
+                        <p id="leviStatus">Press Z</p>
+                    </div>
+                    <div class="activeCards">
+                        <div id="lastPlayedContainer">
+                            <p>Last played:</p>
+                            <img
+                                id="lastPlayedImage"
+                                src="./images/mystery.png"
+                                class="card smallCard"
+                            />
+                        </div>
+                        <img
+                            id="activeCardImage"
+                            src="./images/mystery.png"
+                            class="card mainCard"
+                        />
+                    </div>
+                    <div class="player">
+                        <img
+                            id="millysHand"
+                            src="./images/mystery.png"
+                            class="card"
+                        />
+                        <h2 id="millyTitle">Milly</h2>
+                        <p id="millyStatus">Press M</p>
+                    </div>
+                </div>
+                <div class="noDisplay buttons">
+                    <button id="playAgain">Play again</button>
+                    <button id="askQuestion">Ask a question</button>
+                </div>
+            </section>
+            <script src="./scripts/scroll.js"></script>
+            <script src="./scripts/cardGame.js"></script>
+        </main>
+        <footer>
+            <img id="tulipBanner" src="./images/tulips.jpg" />
+            <div id="footer">
+                <figure>
+                    <img src="./images/me.JPG" id="me" />
+                    <figcaption>
+                        <a
+                            href="https://uk.linkedin.com/in/levi-flanagan-3b87562ab"
+                        >
+                            Levi Flanagan
+                        </a>
+                        - The sexy web developer who made this website for you
+                        ❤️
+                    </figcaption>
+                </figure>
+                <div id="links">
+                    <h2>My details 😉</h2>
+                    <p>Tel - 07462 867275</p>
+                    <p>
+                        <a href="https://www.instagram.com/fatbiscuit_420/"
+                            >Instagram</a
+                        >
+                    </p>
+                    <p><a href="https://github.com/Levi-F06">GitHub</a></p>
+                    <p><a href="https://github.com/">What is GitHub?</a></p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
